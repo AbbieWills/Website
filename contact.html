@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Doggie's Delights</title>
+
+  <!-- CSS Style Sheets -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/3715e2b643.js" crossorigin="anonymous"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu&display=swap" rel="stylesheet">
+
+
+
+</head>     
+
+<body>
+
+  <section id="title">
+
+    <div class="container-fluid1">
+
+
+      <!-- Nav Bar -->
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="home.html">Doggie's Delights</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+              <li class="nav-item">
+                <a class="nav-link" href="meetthemaker.html">Meet The Maker</a>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+        </div>
+      </nav>
+
+
+<!-- Contact -->
+
+  <div class="contact-color">
+    <h3 class="address">Contact Infomation</h3>
+<p class="address">Born in Harrogate, UK <br><br> 
+  Contact now to order ice-cream and book a slot on a delivery route (no minimum order) <i class="fa-solid fa-car"></i><br> 
+  Please specify a selection of dates and times that you will be home to accept the order. <br> <br>
+  sales@ddicecream.co.uk <br> <br></p>
+
+
+  </div>
+<div class="contact-form">
+
+
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+  
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+      <label for="business">Email</label>
+      <input type="text" id="email" name="email" placeholder="Your email..">
+  
+      <label for="business">Business</label>
+      <input type="text" id="business" name="business" placeholder="Your business (optional)..">
+
+      <label for="subject">Subject</label>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+  
+      <input id="submit" type="submit" value="Submit">
+  
+
+  </div>
+
+<div class="address">
+<h4 class="delivery">Delivery information!</h4>
+<p class="deliveryinfo"> 
+  &#x2022 All orders are made fresh and will be delivered frozen so someone will need to accept the order on delivery to keep product frozen. <br>
+  &#x2022 Your order will be delivered between 9am - 4pm within 3 days unless specifed! <br>
+  &#x2022 Returns are not accepted due to the nature of the product but please get in touch if there are any issues! <br>
+</p>
+</div>
+
+
+  <!-- Footer -->
+
+  <footer id="footer">
+    <a class="social-icon fa-brands fa-square-facebook" href="https://www.facebook.com/DoggiesDelightsYorkshire/"></a>
+    <a  class="social-icon fa-brands fa-instagram button" href="https://www.instagram.com/doggiesdelightsyorkshire/" target=”_blank” ></a>
+    <a class="social-icon fa-solid fa-envelope" href = "mailto: sales@ddicecream.co.uk"></a>
+    <p class="footercr">Made with love &#10084; <br>© Copyright Doggie's Delights</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+</body>
+
+<script>
+  const submitButton = document.getElementById("submit")
+  submitButton.addEventListener("click", ()=>{
+    const firstName = document.getElementById("fname").value;
+    const lastName = document.getElementById("lname").value;
+    const email = document.getElementById("email").value;
+    const business = document.getElementById("business").value;
+    const subject = document.getElementById("subject").value;
+    if(firstName && lastName && email && subject){
+      window.open(`mailto:sales@ddicecream.co.uk?subject=New Ice Cream Enquiry From ${firstName} ${lastName} at ${business} &body=${subject}`);
+    } else {
+      alert("Please complete the form before submitting");
+    }
+
+  })
+</script>
+
+</html>

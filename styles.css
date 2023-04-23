@@ -52,12 +52,11 @@
 
 
   .title-img {
-    position: static;
-    width: auto;
-    margin-bottom: -200px;
-    margin-top: -30px;
+    margin-bottom: -100px;
+    margin-top: -480px;
+    padding-top: 200px; 
+    max-width: 530px;
   }
-
 
 
   /* Font Styles */

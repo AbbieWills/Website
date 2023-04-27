@@ -55,7 +55,7 @@
     margin-bottom: -100px;
     margin-top: -480px;
     padding-top: 200px; 
-    max-width: 530px;
+    max-width: 540px;
   }
 
 
@@ -232,7 +232,7 @@
     padding-top: 50px;
   }
 
-  .press-logo, .press-logomac, .press-logopjs {
+  .press-logo {
     /* width: 40%;
     max-width: 400px; */
     height: 200px;
@@ -241,8 +241,11 @@
     border-radius: 10%;
   }
 
-  .press-logomac, .press-logopjs {
+  .press-logoCircle {
     border-radius: 60%;
+    height: 200px;
+    width: 200px;
+    margin: 10px;
   }
 
   .pricing-col {
@@ -250,7 +253,6 @@
 
   }
   
-
 
  /* Call to action */
 
